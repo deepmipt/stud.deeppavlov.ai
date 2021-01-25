@@ -1,0 +1,6 @@
+# - name: Home
+#   link: /ideas
+- name: GSoC
+  link: /ideas/gsoc.html
+- name: MIPT
+  link: /mipt.html

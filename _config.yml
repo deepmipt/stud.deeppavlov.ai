@@ -1,0 +1,29 @@
+collections:
+  authors:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+
+
+pagination:
+  enabled: true
+  per_page: 3
+  title: ' - page :num'
+  limit: 0
+
+

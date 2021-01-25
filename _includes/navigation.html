@@ -1,0 +1,34 @@
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar fixed-top navbar-dark bg-dark"> 
+  <!-- <nav class="nav nav-pills flex-column flex-sm-row"> -->
+    <!--<a class="navbar-brand" href="/">Evenlang</a>-->
+    <!-- <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
+    <!-- <div> -->
+      <ul class="navbar-nav mx-auto navbar-center flex-row mr-1">
+        {% assign titles = "GSoC~/ideas/gsoc, MIPT Students~/ideas/mipt" | split: ", " %}
+        {% for title in titles %}
+        {% assign tit = title | split: "~" %}
+        {% if tit[0] == page.title %}
+        <li class="nav-item mr-4">
+          <a class="nav-link" href="#">{{ tit[0] }}</a>
+        </li>
+        {% else %}
+        <li class="nav-item mr-4">
+          <a class="nav-link" href={{ tit[1] }}>{{ tit[0] }}</a>
+        </li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+      <!--
+	  <form class="form-inline mt-2 mt-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Поиск" aria-label="Поиск">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Поиск</button>
+          </form>
+	  -->
+    <!-- </div> -->
+  </nav>
+</header>
