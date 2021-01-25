@@ -2,8 +2,6 @@ collections:
   authors:
     output: true
 
-baseurl: /stud.deeppavlov.ai
-
 defaults:
   - scope:
       path: ""
@@ -20,6 +18,7 @@ defaults:
     values:
       layout: "default"
 
+baseurl: "/stud.deeppavlov.ai"
 
 gems:
   - jekyll-feed
