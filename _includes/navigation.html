@@ -18,7 +18,7 @@
         </li>
         {% else %}
         <li class="nav-item mr-4">
-          <a class="nav-link" href={{ tit[1] }}>{{ tit[0] }}</a>
+          <a class="nav-link" href="{{ tit[1] | relative_url }}">{{ tit[0] }}</a>
         </li>
         {% endif %}
         {% endfor %}
