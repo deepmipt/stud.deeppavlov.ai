@@ -19,11 +19,9 @@ defaults:
       layout: "default"
 
 
-
-pagination:
-  enabled: true
-  per_page: 3
-  title: ' - page :num'
-  limit: 0
-
-
+gems:
+  - jekyll-feed
+  - jekyll-mentions
+  - jemoji
+  - jekyll-redirect-from
+  - jekyll-sitemap
