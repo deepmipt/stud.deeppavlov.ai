@@ -2,7 +2,7 @@ collections:
   authors:
     output: true
 
-baseurl: "/stud.deeppavlov.ai"
+baseurl: /stud.deeppavlov.ai
 
 defaults:
   - scope:
