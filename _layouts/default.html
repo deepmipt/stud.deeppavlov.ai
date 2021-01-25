@@ -14,12 +14,12 @@
 	<link rel="icon" href="/static/img/icon.png">
 
     <!-- Bootstrap core CSS -->
-    <link href="/bootstrap/bootstrap.min.css" rel="stylesheet">
-	<link href="/bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="{{ '/bootstrap/bootstrap.min.css' | relative_url }}" rel="stylesheet">
+	<link href="{{ '/bootstrap/bootstrap.css' | relative_url }}" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="/bootstrap/sticky-footer-navbar.css" rel="stylesheet">
-    <link href="/bootstrap/carousel.css" rel="stylesheet">
+    <link href="{{ '/bootstrap/sticky-footer-navbar.css' | relative_url }}" rel="stylesheet">
+    <link href="{{ '/bootstrap/carousel.css' | relative_url }}" rel="stylesheet">
   </head>
   <body>
   	{% include navigation.html %}
