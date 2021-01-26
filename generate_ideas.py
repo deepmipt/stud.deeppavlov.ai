@@ -34,6 +34,9 @@ if e:
 e = soup.find("div", attrs={"class": "position-relative js-header-wrapper "})
 if e:
     e.extract()
+e = soup.find("div", attrs={"class": "position-relative js-header-wrapper"})
+if e:
+    e.extract()
 e = soup.find("div", attrs={"class": "js-pinned-issues-reorder-container"})
 if e:
     e.extract()
